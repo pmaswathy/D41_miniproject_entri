@@ -16,6 +16,7 @@ Dataset: disney_plus_shows
 Headers: imdb_id, title, plot, type, rated, year, released_at, added_at, runtime, genre, director, writer, actors, language, country, awards, metascore, imdb_rating, imdb_votes.
 
 Data Preparation: Excel
+
 The Disney+ shows dataset was cleaned and transformed using Power Query in Excel. Empty cells across all columns were replaced with null values to standardize missing data. Duplicate records were eliminated by verifying the uniqueness of each imdb_id, maintaining a clean dataset. Null values in the plot, director, and writer columns were standardized using 'No description' and 'Unknown' as default replacements. To normalize the dataset, multi-value fields (e.g., genre and runtime) were split by delimiters and transformed from columns into individual rows. Data types were accurately assigned, with date columns formatted as dates and ratings as decimals. Custom columns were added to look at the content lifecycle, such as "Years to add," "Years since released," and "Years on Disney." We sorted the content by release year (Old, Mid, Recent, New) and IMDb rating (Excellent, Amazing, High, etc.). In Excel, conditional formatting was used to highlight differences between the year and released_at, as well as metascore ratings. This made it easier to quickly analyze the data visually.
 
 Data Modeling: Power BI
@@ -24,6 +25,7 @@ The analysis was performed by importing Excel data into Power BI. Using DAX, mea
 
 
 Key Insights
+
 o	The dataset features both movies and series, with total counts showing the variety of content available on Disney+.
 o	Most titles receive high IMDb ratings, with a significant number rated as "Okay".
 o	Disney+ content has increased significantly over time, showing platform growth.
