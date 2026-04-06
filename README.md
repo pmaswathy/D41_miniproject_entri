@@ -1,7 +1,7 @@
 # D41_miniproject_entri
 This dataset summarizes Disney+ movies and series, quantifying the content library and providing specific details for each entry.
 
-Project overview
+# Project overview
 
 This project is about analysis of the Disney plus shows. We want to see how all the movies and series are good, who made it and who is in it. Focusing on understanding the rating, and trends of movies and series available on the platform. The analysis utilizes a metadata-rich dataset comprising key film attributes such as IMDB ratings, voting, release years, genres, directors, writer, and actors. We are using Excel and Power Bi to look at all this information.
 
