@@ -23,12 +23,23 @@ Data Modeling: Power BI
 
 The analysis was performed by importing Excel data into Power BI. Using DAX, measures were created to aggregate total movies, series, and identify the present year within the dataset. Visualizations include cards for summary statistics, slicers for dynamic filtering, and various charts like scatter plots, donut charts, and column charts to analyze relationships and distributions. A table visual was created to display the top-rated titles, with a relationship established between the rowdata_disney_plus_shows and disney_plus_shows tables based on the imdb_id column, using a one-to-many cardinality, and filtered to show the top five titles by sum of IMDb ratings. To improve the user experience, we prioritized interactivity by configuring custom tooltips and intuitive filter settings. 
 
+In Power BI, custom DAX measures were created for dynamic calculations:
+
+•	Present Year = MAX (disney_plus_shows[Released_at].[Year])
+
+•	Total Movie = CALCULATE (DISTINCTCOUNT(disney_plus_shows[IMDB ID]), disney_plus_shows[Type]="Movie" )+0
+
+•	Total Series = CALCULATE(DISTINCTCOUNT(disney_plus_shows[IMDB ID]), disney_plus_shows[Type]="Series")+0
+
+•	Target Title = 10
+
+
 
 Key Insights
 
-o	The dataset features both movies and series, with total counts showing the variety of content available on Disney+.
-o	Most titles receive high IMDb ratings, with a significant number rated as "Okay".
-o	Disney+ content has increased significantly over time, showing platform growth.
-o	certain genres perform better in terms of critical scores. 
-o	High-rated titles tend to have strong IMDb scores and metascores, reflecting quality content.
-o	A few countries dominate Disney+ content production.
+•	The dataset features both movies and series, with total counts showing the variety of content available on Disney+.
+•	Most titles receive high IMDb ratings, with a significant number rated as "Okay".
+•	Disney+ content has increased significantly over time, showing platform growth.
+•	certain genres perform better in terms of critical scores. 
+•	High-rated titles tend to have strong IMDb scores and metascores, reflecting quality content.
+•	A few countries dominate Disney+ content production.
