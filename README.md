@@ -1,4 +1,4 @@
-# D41_miniproject_entri
+# Disney+ Shows Analysis
 This dataset summarizes Disney+ movies and series, quantifying the content library and providing specific details for each entry.
 
 # <h2>Project overview</h2>
@@ -10,8 +10,7 @@ Microsoft Excel – Data cleaning and preprocessing <br> Power BI – Data model
 
 # <h2>Data Source
 
-Dataset: disney_plus_shows
-
+Dataset: disney_plus_shows <br>
 Headers: imdb_id, title, plot, type, rated, year, released_at, added_at, runtime, genre, director, writer, actors, language, country, awards, metascore, imdb_rating, imdb_votes.
 
 # <h2>Data Preparation: Excel
@@ -43,3 +42,4 @@ The analysis was performed by importing Excel data into Power BI. Using DAX, mea
 * `Aswathy.P.M_D41_MiniProject_Excel.xlsx` - The cleaned dataset used for modeling.
 * `Aswathy.P.M_D41_MiniProject_PowerBi.pbix` - The Power BI project file.
 * `Dashboard_1501.png` & `Dashboard_1502.jpg` - Images of the final dashboard.
+<img src="Dashboard_1501.png" alt="Dashboard view" width="900" height="600">
